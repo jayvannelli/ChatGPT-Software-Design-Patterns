@@ -35,6 +35,8 @@ def main():
     st.subheader("Implementation")
 
     st.code("""
+from abc import ABC, abstractmethod
+
 # The Command interface declares a method for executing a command.
 class Command(ABC):
   @abstractmethod

@@ -34,6 +34,8 @@ def main():
     st.subheader("Implementation")
 
     st.code("""
+from abc import ABC, abstractmethod
+
 # The Target interface represents the interface that the client expects.
 class Target(ABC):
   @abstractmethod
